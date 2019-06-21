@@ -1,91 +1,11 @@
 {
-  "id" : 569242,
-  "surveyID" : "nbosudobmghllppfgeqx88gfmbjg1xwc5x0o5w0iink",
-  "checkID" : "eijjvsoeu",
-  "answeredQuestions" : 29,
+  "id" : 322054,
+  "surveyID" : "ujztteoknx0bcfsqpisip8tsrb1tuplehliwwcbp41j",
+  "checkID" : "jxzy6zgjm41ofzx93bdjvj9hx6onekch9rgjt5xubzyupr7",
+  "answeredQuestions" : 1,
   "replies" : [ {
-    "type" : "TEXT",
-    "questionID" : 4680871,
-    "Text" : "h481dls3obyaueqkb8imbohrme"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 2801489,
-    "Text" : "clp0jbun9xxbqh4cgvjeuq7levtq1k0yuir"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 4136553,
-    "Text" : "p7lx3s7fcgxwnygzvklnzj"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 2659386,
-    "Text" : "dv9lfgcic4gi9bavg4t9cs3w2d4ywn4mm4jc4ak"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 7889045,
-    "Text" : "ifjyjc6bjyqu0zlr6axubsrbosiiccrcaim"
-  }, {
-    "type" : "MULTIPLE_CHOICE",
-    "questionID" : 4804433,
-    "selectedAnswer" : "Option 3"
-  }, {
-    "type" : "MULTIPLE_CHOICE",
-    "questionID" : 8784050,
-    "selectedAnswer" : "Option 4"
-  }, {
-    "type" : "MULTIPLE_CHOICE",
-    "questionID" : 7383592,
-    "selectedAnswer" : "Option 1"
-  }, {
-    "type" : "MULTIPLE_CHOICE",
-    "questionID" : 711963,
-    "selectedAnswer" : "Option 1"
-  }, {
-    "type" : "MULTIPLE_CHOICE",
-    "questionID" : 5860767,
-    "selectedAnswer" : "Option 2"
-  }, {
-    "type" : "MULTIPLE_CHOICE",
-    "questionID" : 4707296,
-    "selectedAnswer" : "Option 10"
-  }, {
-    "type" : "CHECKBOX",
-    "questionID" : 2198211,
-    "selectedAnswer" : [ "Option 1 Check", "Option 3 Check", "Option 4 Check", "Option 6 Check", "Option 8 Check" ]
-  }, {
-    "type" : "CHECKBOX",
-    "questionID" : 1154309,
-    "selectedAnswer" : [ "Option 1 Check", "Option 3 Check", "Option 5 Check", "Option 6 Check", "Option 7 Check" ]
-  }, {
-    "type" : "CHECKBOX",
-    "questionID" : 9192512,
-    "selectedAnswer" : [ "Option 3 Check", "Option 5 Check", "Option 7 Check", "Option 12 Check" ]
-  }, {
-    "type" : "CHECKBOX",
-    "questionID" : 9824334,
-    "selectedAnswer" : [ "Option 1 Check", "Option 2 Check", "Option 3 Check", "Option 4 Check" ]
-  }, {
     "type" : "DROPDOWN",
-    "questionID" : 4135372,
-    "selectedAnswer" : "Option 1 Dropdown"
-  }, {
-    "type" : "DROPDOWN",
-    "questionID" : 4805545,
-    "selectedAnswer" : "Option 10 Dropdown"
-  }, {
-    "type" : "DROPDOWN",
-    "questionID" : 8938556,
+    "questionID" : 5544882,
     "selectedAnswer" : "Option 4 Dropdown"
-  }, {
-    "type" : "DROPDOWN",
-    "questionID" : 5624228,
-    "selectedAnswer" : "Option 1 Dropdown"
-  }, {
-    "type" : "DROPDOWN",
-    "questionID" : 7500866,
-    "selectedAnswer" : "Option 7 Dropdown"
-  }, {
-    "type" : "DROPDOWN",
-    "questionID" : 6317575,
-    "selectedAnswer" : "Option 6 Dropdown"
   } ]
 }

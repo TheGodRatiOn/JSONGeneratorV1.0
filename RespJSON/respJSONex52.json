@@ -1,11 +1,67 @@
 {
-  "id" : 108974,
-  "surveyID" : "upuftjwckrw7abnj1picfxqd1tukpzsnetcpbzavzci",
-  "checkID" : "eijjvsoeu",
-  "answeredQuestions" : 1,
+  "id" : 36037,
+  "surveyID" : "kl0qavzsf4kgohwdmhwqkgmvb9n9rgeny7ewfb1upaw",
+  "checkID" : "jxzy6zgjm41ofzx93bdjvj9hx6onekch9rgjt5xubzyupr7",
+  "answeredQuestions" : 16,
   "replies" : [ {
+    "type" : "TEXT",
+    "questionID" : 7101006,
+    "Text" : "8vlq"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 713461,
+    "Text" : "wkwauf5fylcxu0wzd6ovs15c7ahawgsougnirkx"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 6865483,
+    "Text" : "nh8"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 4315805,
+    "Text" : "kfxgvmarlvphqbcomzn30xdghpvg6hzgll"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 6575881,
+    "Text" : "9ks0exbktsaeeq7bnrejod"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 728269,
+    "Text" : "s9kq"
+  }, {
     "type" : "MULTIPLE_CHOICE",
-    "questionID" : 4707296,
-    "selectedAnswer" : "Option 3"
+    "questionID" : 1966567,
+    "selectedAnswer" : "Option 5"
+  }, {
+    "type" : "MULTIPLE_CHOICE",
+    "questionID" : 3803511,
+    "selectedAnswer" : "Option 12"
+  }, {
+    "type" : "MULTIPLE_CHOICE",
+    "questionID" : 3049693,
+    "selectedAnswer" : "Option 1"
+  }, {
+    "type" : "MULTIPLE_CHOICE",
+    "questionID" : 6752872,
+    "selectedAnswer" : "Option 2"
+  }, {
+    "type" : "CHECKBOX",
+    "questionID" : 7450217,
+    "selectedAnswer" : [ "Option 1 Check", "Option 2 Check", "Option 4 Check", "Option 5 Check", "Option 6 Check", "Option 11 Check", "Option 13 Check" ]
+  }, {
+    "type" : "CHECKBOX",
+    "questionID" : 6881547,
+    "selectedAnswer" : [ "Option 2 Check", "Option 3 Check", "Option 4 Check" ]
+  }, {
+    "type" : "DROPDOWN",
+    "questionID" : 7602942,
+    "selectedAnswer" : "Option 2 Dropdown"
+  }, {
+    "type" : "DROPDOWN",
+    "questionID" : 3451844,
+    "selectedAnswer" : "Option 1 Dropdown"
+  }, {
+    "type" : "DROPDOWN",
+    "questionID" : 8219878,
+    "selectedAnswer" : "Option 3 Dropdown"
   } ]
 }

@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 
-import javax.swing.plaf.synth.SynthStyle;
 import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
@@ -63,7 +62,7 @@ public class Main {
             surveyCopiesBas.add(new SurveyCopy(buffStrID, buffQuestNumb));
         }
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++){
             surveyCopiesMod.add(surveyLinkedList.get(i).fillQuestionArrays(surveyCopiesBas.get(i)));
         }
 
@@ -74,7 +73,7 @@ public class Main {
         }
 
         for (int i = 0; i < N * M; i++) {
-            responseLinkedList.get(i).fillQuestionRelpies(surveyCopiesMod.get(i/(N*M)));
+            responseLinkedList.get(i).fillQuestionRelpies(surveyCopiesMod.get(i/M));
         }
 
         String curDir = System.getProperty("user.dir");
