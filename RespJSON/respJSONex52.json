@@ -1,87 +1,11 @@
 {
-  "id" : 51892,
-  "surveyID" : "nn4n6zrjarkqrnnqllsztxip1jchfby56tv7xajhmmk",
-  "checkID" : "i0aexuymakp90bx70epfgumkjtep5cfozq9t6u364ekicj9",
-  "answeredQuestions" : 35,
+  "id" : 108974,
+  "surveyID" : "upuftjwckrw7abnj1picfxqd1tukpzsnetcpbzavzci",
+  "checkID" : "eijjvsoeu",
+  "answeredQuestions" : 1,
   "replies" : [ {
-    "type" : "TEXT",
-    "questionID" : 6108815,
-    "Text" : "yj5lcwparhm7v6ypk6idj3jtm5mpwtirdtpsmrc"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 6014980,
-    "Text" : "jpdhszop6zqq8112xjch3kwft4mihxyievepkz"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 6244945,
-    "Text" : "af5rtfxzn9m6tsv"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 4842065,
-    "Text" : "r7ei0pzucyiwjudc0xtqgs3sesytbr"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 1997641,
-    "Text" : "2omljqh4j5uym"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 6366473,
-    "Text" : "hwdsgknso5tp6"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 6411684,
-    "Text" : "mlueob1u4qjcpojhczecf0vwusbiapj"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 5304289,
-    "Text" : "xjshwazovcqclskxsgn4aiow2bi5xdv"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 5856585,
-    "Text" : ""
-  }, {
-    "type" : "TEXT",
-    "questionID" : 4350218,
-    "Text" : "1426ktz9t7l0ox11qjfqiafd3ogtaqwinzeemw"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 2972965,
-    "Text" : "6udgqwtkt1nnt2t3ss7raw0rtvcbi"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 351717,
-    "Text" : "egbnlqdxsmyw3yzgu2iwu9sz2ytcufgzp"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 2198700,
-    "Text" : "aks35igc7kqzfc0kqz"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 1254407,
-    "Text" : "owzgui55g9h3"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 502323,
-    "Text" : "zocivy2yg3jtvu"
-  }, {
-    "type" : "TEXT",
-    "questionID" : 9924476,
-    "Text" : "ecgskxoimgh"
-  }, {
     "type" : "MULTIPLE_CHOICE",
-    "questionID" : 8579692,
-    "selectedAnswer" : "Option 9"
-  }, {
-    "type" : "DROPDOWN",
-    "questionID" : 683405,
-    "selectedAnswer" : "Option 4 Dropdown"
-  }, {
-    "type" : "DROPDOWN",
-    "questionID" : 3687302,
-    "selectedAnswer" : "Option 1 Dropdown"
-  }, {
-    "type" : "DROPDOWN",
-    "questionID" : 1301325,
-    "selectedAnswer" : "Option 6 Dropdown"
+    "questionID" : 4707296,
+    "selectedAnswer" : "Option 3"
   } ]
 }

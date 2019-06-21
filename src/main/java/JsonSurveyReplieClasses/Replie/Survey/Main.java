@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 
+import javax.swing.plaf.synth.SynthStyle;
 import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
@@ -65,14 +66,6 @@ public class Main {
         for (int i = 0; i < N; i++) {
             surveyCopiesMod.add(surveyLinkedList.get(i).fillQuestionArrays(surveyCopiesBas.get(i)));
         }
-        for (int i = 0; i < N ; i++) {
-            System.out.println(surveyCopiesMod.get(i).getId());
-            System.out.println(surveyCopiesMod.get(i).getQuestionsNumber());
-            System.out.println(surveyCopiesBas.get(i).getId());
-            System.out.println(surveyCopiesBas.get(i).getQuestionsNumber());
-            System.out.println(surveyLinkedList.get(i).getId());
-            System.out.println(surveyLinkedList.get(i).getQuestionsNumber());
-        }
 
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
@@ -105,11 +98,13 @@ public class Main {
         {
             try {
 
-                objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(curDir + "\\RespJSON\\respJSONex" + (i + 1) + ".json"),responseLinkedList.get(i));
+                objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(curDir + "\\RespJSON\\respJSONex" + (N*M -i) + ".json"),responseLinkedList.get(i));
 
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+
+        System.exit(0);
     }
 }

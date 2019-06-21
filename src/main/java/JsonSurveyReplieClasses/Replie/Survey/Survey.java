@@ -29,44 +29,12 @@ public class Survey{
         this.id = id;
     }
 
-    public String getTitle() {
-        return meta.getTitle();
+    public Meta getMeta() {
+        return meta;
     }
 
-    public void setTitle(String title) {
-        this.meta.setTitle(title);
-    }
-
-    public String getDescription() {
-        return this.meta.getDescription();
-    }
-
-    public void setDescription(String description) {
-        this.meta.setDescription(description);
-    }
-
-    public LinkedList<String> getEditorsId() {
-        return this.meta.getEditorsId();
-    }
-
-    public void setEditorsId(LinkedList<String> editorsId) {
-        this.meta.setEditorsId(editorsId);
-    }
-
-    public String getConfirmationMesssage() {
-        return this.meta.getConfirmationMesssage();
-    }
-
-    public void setConfirmationMesssage(String confirmationMesssage) {
-        this.meta.setConfirmationMesssage(confirmationMesssage);
-    }
-
-    public int getQuestionsNumber() {
-        return this.meta.getQuestionsNumber();
-    }
-
-    public void setQuestionsNumber(int questionsNumber) {
-        this.meta.setQuestionsNumber(questionsNumber);
+    public void setMeta(Meta meta) {
+        this.meta = meta;
     }
 
     public ArrayList<questions> getQuestions() {
@@ -153,5 +121,4 @@ public class Survey{
         }
         return surveyCopy;
     }
-
 }
