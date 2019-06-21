@@ -97,7 +97,7 @@ public class Main {
         {
             try {
 
-                objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(curDir + "\\RespJSON\\respJSONex" + (N*M -i) + ".json"),responseLinkedList.get(i));
+                objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(curDir + "\\RespJSON\\respJSONex" + (i + 1) + ".json"),responseLinkedList.get(i));
 
             } catch (IOException e) {
                 e.printStackTrace();
