@@ -1,0 +1,19 @@
+{
+  "id" : 555312,
+  "surveyID" : "vzjo0qizitbzf5te6lyinnovpuvspfzj2jkqr2mvgkb",
+  "checkID" : "i0aexuymakp90bx70epfgumkjtep5cfozq9t6u364ekicj9",
+  "answeredQuestions" : 3,
+  "replies" : [ {
+    "type" : "TEXT",
+    "questionID" : 351717,
+    "Text" : "w8qnm32xu4qplurbozboe1q80j"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 4493324,
+    "Text" : "o8q"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 2198700,
+    "Text" : "zistrvla"
+  } ]
+}

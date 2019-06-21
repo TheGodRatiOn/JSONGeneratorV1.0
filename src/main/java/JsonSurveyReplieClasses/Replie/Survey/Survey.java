@@ -1,39 +1,24 @@
-package JsonSurveyReplieClasses.Survey;
+package JsonSurveyReplieClasses.Replie.Survey;
 
 import JsonSurveyReplieClasses.*;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 
 
 public class Survey{
     private String id;
-    private String title;
-    private String description;
-    private LinkedList<String> editorsId;
-    private String confirmationMesssage;
-    private int questionsNumber;
+    private JsonSurveyReplieClasses.Replie.Survey.Meta meta;
     private ArrayList<questions> questions;
 
-    Survey(String survID, String survTitle, String survDescription, String survEditID1, String survEditID2, String survConfMess, int survQuestNumb){
+    Survey(String survID, String survTitle, String survDescription, String survCompanyID, LinkedList<String> stringLinkedList, String survConfMess, int survQuestNumb){
         this.id = survID;
-        this.title = survTitle;
-        this.description = survDescription;
-        this.editorsId = new LinkedList<>();
-        this.editorsId.add(survEditID1);
-        this.editorsId.add(survEditID2);
-        this.confirmationMesssage = survConfMess;
-        this.questionsNumber = survQuestNumb;
+        this.meta = new Meta(survTitle, survDescription, survCompanyID, stringLinkedList, survConfMess, survQuestNumb);
         this.questions = new ArrayList<>();
     }
 
     Survey(){
         this.id = null;
-        this.title = null;
-        this.description = null;
-        this.editorsId = null;
-        this.confirmationMesssage = null;
-        this.questionsNumber = -1;
+        this.meta = null;
     }
 
     public String getId() {
@@ -45,43 +30,43 @@ public class Survey{
     }
 
     public String getTitle() {
-        return title;
+        return meta.getTitle();
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.meta.setTitle(title);
     }
 
     public String getDescription() {
-        return description;
+        return this.meta.getDescription();
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.meta.setDescription(description);
     }
 
     public LinkedList<String> getEditorsId() {
-        return editorsId;
+        return this.meta.getEditorsId();
     }
 
     public void setEditorsId(LinkedList<String> editorsId) {
-        this.editorsId = editorsId;
+        this.meta.setEditorsId(editorsId);
     }
 
     public String getConfirmationMesssage() {
-        return confirmationMesssage;
+        return this.meta.getConfirmationMesssage();
     }
 
     public void setConfirmationMesssage(String confirmationMesssage) {
-        this.confirmationMesssage = confirmationMesssage;
+        this.meta.setConfirmationMesssage(confirmationMesssage);
     }
 
     public int getQuestionsNumber() {
-        return questionsNumber;
+        return this.meta.getQuestionsNumber();
     }
 
     public void setQuestionsNumber(int questionsNumber) {
-        this.questionsNumber = questionsNumber;
+        this.meta.setQuestionsNumber(questionsNumber);
     }
 
     public ArrayList<questions> getQuestions() {
@@ -110,52 +95,63 @@ public class Survey{
         return resString.value;
     }
 
-    public void fillQuestionArrays(){
+    public SurveyCopy fillQuestionArrays(SurveyCopy surveyCopy){
         int currentLengthTA, currentLengthCB, currentLengthMC,currentLengthDD;
-        if (this.questionsNumber < 1){
+        if (this.meta.getQuestionsNumber() < 1){
             System.out.println("No questions are about to be created");
         }else{
-            currentLengthDD = generateInt(this.questionsNumber/4);
-            currentLengthCB = generateInt(this.questionsNumber - currentLengthDD)/4;
-            currentLengthMC = generateInt(this.questionsNumber - currentLengthDD - currentLengthCB)/4;
-            currentLengthTA = this.questionsNumber - currentLengthDD - currentLengthMC - currentLengthCB;
+            currentLengthDD = generateInt(this.meta.getQuestionsNumber()/5);
+            currentLengthCB = generateInt(this.meta.getQuestionsNumber() - currentLengthDD)/4;
+            currentLengthMC = generateInt(this.meta.getQuestionsNumber() - currentLengthDD - currentLengthCB)/3;
+            currentLengthTA = this.meta.getQuestionsNumber() - currentLengthDD - currentLengthMC - currentLengthCB;
 
 
             for (int i = 0; i < currentLengthTA; i++) {
-                this.questions.add(new SurveyTypeTextArea(generateBasString(generateInt(40)),
+                SurveyTypeTextArea bufferTA = new SurveyTypeTextArea(generateBasString(generateInt(40)),
                         generateBasString(generateInt(30)),
                         generateBasString(generateInt(100)),
                         generateInt(10000000),
-                        generateBoolean()));
+                        generateBoolean());
+                surveyCopy.getQuestionsTA().add(bufferTA);
+                this.questions.add(bufferTA);
             }
 
             for (int i = 0; i < currentLengthMC; i++) {
-                this.questions.add(new SurveyTypeMultipleChoice(generateBasString(generateInt(40)),
+                SurveyTypeMultipleChoice bufferMC = new SurveyTypeMultipleChoice(generateBasString(generateInt(40)),
                         generateBasString(generateInt(30)),
                         generateBasString(generateInt(100)),
                         generateInt(10000000),
                         generateBoolean(),
-                        generateInt(10)));
+                        generateInt(10));
+                surveyCopy.getQuestionsMC().add(bufferMC);
+                this.questions.add(bufferMC);
             }
 
             for (int i = 0; i < currentLengthCB; i++) {
-                this.questions.add(new SurveyTypeCheckbox(generateBasString(generateInt(40)),
+                SurveyTypeCheckbox bufferCB = new SurveyTypeCheckbox(generateBasString(generateInt(40)),
                         generateBasString(generateInt(30)),
                         generateBasString(generateInt(100)),
                         generateInt(10000000),
                         generateBoolean(),
-                        generateInt(10)));
+                        generateInt(10));
+                surveyCopy.getQuestionsCB().add(bufferCB);
+                this.questions.add(bufferCB);
             }
 
             for (int i = 0; i < currentLengthDD; i++) {
-                this.questions.add(new SurveyTypeDropdown(generateBasString(generateInt(40)),
+                SurveyTypeDropdown bufferDD = new SurveyTypeDropdown(generateBasString(generateInt(40)),
                         generateBasString(generateInt(30)),
                         generateBasString(generateInt(100)),
                         generateInt(10000000),
                         generateBoolean(),
-                        generateInt(10)));
+                        generateInt(10));
+                surveyCopy.getQuestionsDD().add(bufferDD);
+                this.questions.add(bufferDD);
             }
+
+            return surveyCopy;
         }
+        return surveyCopy;
     }
 
 }

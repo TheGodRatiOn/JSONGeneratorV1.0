@@ -1,4 +1,4 @@
-package JsonSurveyReplieClasses.Survey;
+package JsonSurveyReplieClasses.Replie.Survey;
 
 
 public class SurveyTypeTextArea extends questions {

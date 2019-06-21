@@ -1,4 +1,4 @@
-package JsonSurveyReplieClasses.Survey;
+package JsonSurveyReplieClasses.Replie.Survey;
 
 import java.util.ArrayList;
 
@@ -39,5 +39,21 @@ public class SurveyTypeMultipleChoice extends questions {
         this.hasOtherOption = false;
        // this.optionsLength = -1;
         this.options = null;
+    }
+
+    public boolean isHasOtherOption() {
+        return hasOtherOption;
+    }
+
+    public void setHasOtherOption(boolean hasOtherOption) {
+        this.hasOtherOption = hasOtherOption;
+    }
+
+    public ArrayList<String> getOptions() {
+        return options;
+    }
+
+    public void setOptions(ArrayList<String> options) {
+        this.options = options;
     }
 }

@@ -1,4 +1,4 @@
-package JsonSurveyReplieClasses.Survey;
+package JsonSurveyReplieClasses.Replie.Survey;
 
 abstract class questions {
     String type;

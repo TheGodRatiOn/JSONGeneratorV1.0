@@ -1,0 +1,39 @@
+{
+  "id" : 3132,
+  "surveyID" : "vzjo0qizitbzf5te6lyinnovpuvspfzj2jkqr2mvgkb",
+  "checkID" : "i0aexuymakp90bx70epfgumkjtep5cfozq9t6u364ekicj9",
+  "answeredQuestions" : 9,
+  "replies" : [ {
+    "type" : "TEXT",
+    "questionID" : 6108815,
+    "Text" : "ykzb9mrfjzetqx2si26i8qgbr7p4"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 4842065,
+    "Text" : "jjfe3wfkrbsxnjr4e8pdbaqbs4alcjvd13srel4"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 1997641,
+    "Text" : "jnyml8w5tj6hzqeivqc7jvtg"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 4493324,
+    "Text" : "4lu2wahgwgn1fv7xhrp3bdxq"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 2198700,
+    "Text" : "scmxuzemgko"
+  }, {
+    "type" : "TEXT",
+    "questionID" : 1254407,
+    "Text" : "udk7zfal5uonlpnhedvhkb"
+  }, {
+    "type" : "CHECKBOX",
+    "questionID" : 7543792,
+    "selectedAnswer" : [ "Option 1 Check", "Option 2 Check", "Option 3 Check", "Option 6 Check" ]
+  }, {
+    "type" : "DROPDOWN",
+    "questionID" : 3414692,
+    "selectedAnswer" : "Option 2 Dropdown"
+  } ]
+}
