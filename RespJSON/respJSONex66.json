@@ -1,31 +1,31 @@
 {
-  "id" : 943559,
-  "surveyID" : "u1pqxgafr4wdf4mvvxmlb7b1sqpqmhc0qcj0wx23llq",
-  "checkID" : "rxykv7j7jcwmozxsicubrcaeblvgtzw5rp",
-  "answeredQuestions" : 7,
+  "id" : 404473,
+  "surveyID" : "dicro1m3welzrt1ohgjxouo7xtbjcxdv37mgqdi1jks",
+  "checkID" : "4nbfcsg6zfb3edcszr8ilo7h6dssco1gchdv2j5",
+  "answeredQuestions" : 6,
   "replies" : [ {
-    "type" : "TEXT",
-    "questionID" : 4505798,
-    "Text" : "fuzokclqmrcksvadldzqme50gq9fdj7ltj6g"
+    "type" : "TEXTAREA",
+    "questionID" : 4485655,
+    "Text" : "rvwawxw"
   }, {
-    "type" : "TEXT",
-    "questionID" : 157862,
-    "Text" : "jhoooa"
+    "type" : "TEXTAREA",
+    "questionID" : 2761743,
+    "Text" : "gkutba433r8cbcsodq60ls76gpftf"
+  }, {
+    "type" : "TEXTAREA",
+    "questionID" : 9808362,
+    "Text" : ""
   }, {
     "type" : "MULTIPLE_CHOICE",
-    "questionID" : 316224,
-    "selectedAnswer" : "Option 3"
+    "questionID" : 8620528,
+    "selectedAnswer" : "Option 6"
   }, {
-    "type" : "MULTIPLE_CHOICE",
-    "questionID" : 910295,
-    "selectedAnswer" : "Option 5"
-  }, {
-    "type" : "DROPDOWN",
-    "questionID" : 9482844,
-    "selectedAnswer" : "Option 5 Dropdown"
+    "type" : "CHECKBOX",
+    "questionID" : 6129924,
+    "selectedAnswer" : [ "Option 1 Check", "Option 2 Check", "Option 3 Check", "Option 5 Check", "Option 7 Check", "Option 8 Check" ]
   }, {
     "type" : "DROPDOWN",
-    "questionID" : 8121861,
-    "selectedAnswer" : "Option 2 Dropdown"
+    "questionID" : 9079189,
+    "selectedAnswer" : "Option 9 Dropdown"
   } ]
 }

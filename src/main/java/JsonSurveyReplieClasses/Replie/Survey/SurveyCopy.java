@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class SurveyCopy {
     private String id;
     private int questionsNumber;
+    private ArrayList<SurveyTypeText> questionsT;
     private ArrayList<SurveyTypeTextArea> questionsTA;
     private ArrayList<SurveyTypeMultipleChoice> questionsMC;
     private ArrayList<SurveyTypeCheckbox> questionsCB;
@@ -13,6 +14,7 @@ public class SurveyCopy {
     SurveyCopy (String survID, int survQuestNumb){
         this.id = survID;
         this.questionsNumber = survQuestNumb;
+        this.questionsT = new ArrayList<>();
         this.questionsTA = new ArrayList<>();
         this.questionsMC = new ArrayList<>();
         this.questionsCB = new ArrayList<>();
@@ -22,6 +24,7 @@ public class SurveyCopy {
     SurveyCopy(){
         this.id = null;
         this.questionsNumber = -1;
+        this.questionsT = null;
         this.questionsTA = null;
         this.questionsMC = null;
         this.questionsCB = null;
@@ -42,6 +45,14 @@ public class SurveyCopy {
 
     public void setQuestionsNumber(int questionsNumber) {
         this.questionsNumber = questionsNumber;
+    }
+
+    public ArrayList<SurveyTypeText> getQuestionsT() {
+        return questionsT;
+    }
+
+    public void setQuestionsT(ArrayList<SurveyTypeText> questionsT) {
+        this.questionsT = questionsT;
     }
 
     public ArrayList<SurveyTypeTextArea> getQuestionsTA() {

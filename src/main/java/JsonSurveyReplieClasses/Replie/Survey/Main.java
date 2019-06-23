@@ -56,6 +56,7 @@ public class Main {
                     generateBasString(generateInt(80)),
                     generateBasString(generateInt(60)),
                     generateBasString(40),
+                    generateBasString(40),
                     editorsList,
                     generateBasString(generateInt(57)),
                     buffQuestNumb));

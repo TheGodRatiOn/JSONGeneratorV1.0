@@ -106,19 +106,27 @@ public class Response {
             addQueueValidation.add(pos, true);
         }
 
-        for (int k = 0; k < surveyCopy.getQuestionsTA().size(); k++) {
-
-            if (!addQueueValidation.get(k)){
+        for (int i = 0; i < surveyCopy.getQuestionsT().size(); i++) {
+            if (!addQueueValidation.get(i)){
                 continue;
             }
-            this.replies.add(new ReplieTA(surveyCopy.getQuestionsTA().get(k).id,
+            this.replies.add(new ReplieT(surveyCopy.getQuestionsT().get(i).id,
+                    generateBasString(generateInt(40))));
+        }
+
+        for (int i = 0; i < surveyCopy.getQuestionsTA().size(); i++) {
+
+            if (!addQueueValidation.get(i + surveyCopy.getQuestionsT().size())){
+                continue;
+            }
+            this.replies.add(new ReplieTA(surveyCopy.getQuestionsTA().get(i).id,
                     generateBasString(generateInt(40))));
 
         }
 
         for (int i = 0; i < surveyCopy.getQuestionsMC().size(); i++) {
 
-            if (!addQueueValidation.get(i + surveyCopy.getQuestionsTA().size())){
+            if (!addQueueValidation.get(i + surveyCopy.getQuestionsTA().size() + surveyCopy.getQuestionsT().size())){
                 continue;
             }
 
@@ -128,7 +136,7 @@ public class Response {
 
         for (int i = 0; i < surveyCopy.getQuestionsCB().size(); i++) {
 
-            if (!addQueueValidation.get(i + surveyCopy.getQuestionsTA().size() + surveyCopy.getQuestionsMC().size())){
+            if (!addQueueValidation.get(i + surveyCopy.getQuestionsT().size() + surveyCopy.getQuestionsTA().size() + surveyCopy.getQuestionsMC().size())){
                 continue;
             }
 
@@ -154,7 +162,7 @@ public class Response {
 
         for (int i = 0; i < surveyCopy.getQuestionsDD().size(); i++) {
 
-            if (!addQueueValidation.get(i + surveyCopy.getQuestionsTA().size() + surveyCopy.getQuestionsMC().size() + surveyCopy.getQuestionsCB().size())){
+            if (!addQueueValidation.get(i + surveyCopy.getQuestionsT().size()+ surveyCopy.getQuestionsTA().size() + surveyCopy.getQuestionsMC().size() + surveyCopy.getQuestionsCB().size())){
                 continue;
             }
 

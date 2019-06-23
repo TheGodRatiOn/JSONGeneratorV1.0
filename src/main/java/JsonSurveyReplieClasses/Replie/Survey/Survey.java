@@ -10,9 +10,9 @@ public class Survey{
     private JsonSurveyReplieClasses.Replie.Survey.Meta meta;
     private ArrayList<questions> questions;
 
-    Survey(String survID, String survTitle, String survDescription, String survCompanyID, LinkedList<String> stringLinkedList, String survConfMess, int survQuestNumb){
+    Survey(String survID, String survTitle, String survDescription, String posterID, String survCompanyID, LinkedList<String> stringLinkedList, String survConfMess, int survQuestNumb){
         this.id = survID;
-        this.meta = new Meta(survTitle, survDescription, survCompanyID, stringLinkedList, survConfMess, survQuestNumb);
+        this.meta = new Meta(survTitle, survDescription, posterID,survCompanyID, stringLinkedList, survConfMess, survQuestNumb);
         this.questions = new ArrayList<>();
     }
 
@@ -64,15 +64,27 @@ public class Survey{
     }
 
     public SurveyCopy fillQuestionArrays(SurveyCopy surveyCopy){
-        int currentLengthTA, currentLengthCB, currentLengthMC,currentLengthDD;
+        int currentLengthTA, currentLengthT, currentLengthCB, currentLengthMC, currentLengthDD;
         if (this.meta.getQuestionsNumber() < 1){
             System.out.println("No questions are about to be created");
         }else{
-            currentLengthDD = generateInt(this.meta.getQuestionsNumber()/5);
-            currentLengthCB = generateInt(this.meta.getQuestionsNumber() - currentLengthDD)/4;
-            currentLengthMC = generateInt(this.meta.getQuestionsNumber() - currentLengthDD - currentLengthCB)/3;
-            currentLengthTA = this.meta.getQuestionsNumber() - currentLengthDD - currentLengthMC - currentLengthCB;
 
+            currentLengthDD = generateInt(this.meta.getQuestionsNumber())/6;
+            currentLengthCB = generateInt(this.meta.getQuestionsNumber() - currentLengthDD)/5;
+            currentLengthMC = generateInt(this.meta.getQuestionsNumber() - currentLengthDD - currentLengthCB)/3;
+            currentLengthT = generateInt(this.meta.getQuestionsNumber() - currentLengthDD - currentLengthMC - currentLengthCB)/2;
+            currentLengthTA = this.meta.getQuestionsNumber() - currentLengthDD - currentLengthMC - currentLengthCB - currentLengthT ;
+
+
+            for (int i = 0; i < currentLengthT; i++) {
+                SurveyTypeText bufferT = new SurveyTypeText(generateBasString(generateInt(40)),
+                        generateBasString(generateInt(30)),
+                        generateBasString(generateInt(100)),
+                        generateInt(10000000),
+                        generateBoolean());
+                surveyCopy.getQuestionsT().add(bufferT);
+                this.questions.add(bufferT);
+            }
 
             for (int i = 0; i < currentLengthTA; i++) {
                 SurveyTypeTextArea bufferTA = new SurveyTypeTextArea(generateBasString(generateInt(40)),

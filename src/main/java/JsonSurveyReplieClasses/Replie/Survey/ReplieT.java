@@ -1,15 +1,15 @@
 package JsonSurveyReplieClasses.Replie.Survey;
 
-public class ReplieTA extends replies {
+public class ReplieT extends replies {
     String Text;
 
-    ReplieTA(int rID, String rText){
-        this.type = "TEXTAREA";
+    ReplieT(int rID, String rText){
+        this.type = "TEXT";
         this.questionID = rID;
         this.Text = rText;
     }
 
-    ReplieTA(){
+    ReplieT(){
         this.type = null;
         this.questionID = -1;
         this.Text = null;

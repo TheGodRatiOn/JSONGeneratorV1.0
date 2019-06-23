@@ -5,14 +5,16 @@ import java.util.LinkedList;
 public class Meta {
        private String title;
        private String description;
+       private String posterID;
        private String companyID;
        private LinkedList<String> editorsId;
        private String confirmationMesssage;
        private int questionsNumber;
 
-       public Meta(String survTitle, String survDescription, String companyID, LinkedList<String> stringLinkedList, String survConfMess, int questionsNumber){
+       public Meta(String survTitle, String survDescription, String posterID, String companyID, LinkedList<String> stringLinkedList, String survConfMess, int questionsNumber){
               this.title = survTitle;
               this.description = survDescription;
+              this.posterID = posterID;
               this.companyID = companyID;
               this.editorsId = stringLinkedList;
               this.confirmationMesssage = survConfMess;
@@ -23,6 +25,7 @@ public class Meta {
               this.title = null;
               this.description = null;
               this.companyID = null;
+              this.posterID = null;
               this.editorsId = null;
               this.confirmationMesssage = null;
               this.questionsNumber = -1;
@@ -43,6 +46,14 @@ public class Meta {
 
        public void setDescription(String description) {
               this.description = description;
+       }
+
+       public String getPosterID() {
+              return posterID;
+       }
+
+       public void setPosterID(String posterID) {
+              this.posterID = posterID;
        }
 
        public String getCompanyID() {
