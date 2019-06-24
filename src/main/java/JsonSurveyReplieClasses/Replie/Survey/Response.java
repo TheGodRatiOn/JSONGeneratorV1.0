@@ -5,33 +5,33 @@ import JsonSurveyReplieClasses.RandomString;
 import java.util.*;
 
 public class Response {
-    private int id;
+    private String id;
     private String surveyID;
     private String checkID;
     private int answeredQuestions;
     private ArrayList<replies> replies;
 
-    Response(int resID, String resSurveyID, String resCheckID, int resAnsweredQuestions){
+    Response(String resID, String resSurveyID, String resCheckID, int resAnsweredQuestions){
         this.id = resID;
-        this.surveyID = resSurveyID;
+        this.surveyID = "";
         this.checkID = resCheckID;
         this.answeredQuestions = resAnsweredQuestions;
         this.replies = new ArrayList<>();
     }
 
     Response(){
-        this.id = -1;
+        //this.id = -1;
         this.surveyID = null;
         this.answeredQuestions = -1;
         this.checkID = null;
         this.replies = new ArrayList<>();
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -110,6 +110,7 @@ public class Response {
             if (!addQueueValidation.get(i)){
                 continue;
             }
+            //surveyCopy.getQuestionsT().get(i).id
             this.replies.add(new ReplieT(surveyCopy.getQuestionsT().get(i).id,
                     generateBasString(generateInt(40))));
         }

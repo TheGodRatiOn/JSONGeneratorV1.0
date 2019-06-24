@@ -13,7 +13,7 @@ public class SurveyTypeMultipleChoice extends questions {
         }
     }
 
-    SurveyTypeMultipleChoice(String sHelpText, String sPlaceHolder, String sTitle, int sID, boolean sIsRequired, int sOptLength){
+    SurveyTypeMultipleChoice(String sHelpText, String sPlaceHolder, String sTitle, String sID, boolean sIsRequired, int sOptLength){
         this.type = "MULTIPLE_CHOICE";
         this.helpText = sHelpText;
         this.placeholder = sPlaceHolder;
@@ -34,7 +34,7 @@ public class SurveyTypeMultipleChoice extends questions {
         this.helpText = null;
         this.placeholder = null;
         this.title = null;
-        this.id = -1;
+        this.id = null;
         this.isRequired = false;
         //this.hasOtherOption = false;
         this.options = null;

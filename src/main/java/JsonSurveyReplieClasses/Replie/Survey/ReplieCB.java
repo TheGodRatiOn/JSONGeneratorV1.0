@@ -7,7 +7,7 @@ public class ReplieCB extends replies {
     //boolean selectedAnotherOption;
     LinkedList<String> selectedAnswer;
 
-    ReplieCB(int rID, LinkedList<String> stringLinkedList){
+    ReplieCB(String rID, LinkedList<String> stringLinkedList){
         this.type = "CHECKBOX";
         this.questionID = rID;
         //this.selectedAnotherOption = rSelectedAnotherOption;
@@ -16,7 +16,7 @@ public class ReplieCB extends replies {
 
     ReplieCB(){
         this.type = null;
-        this.questionID = -1;
+        this.questionID = null;
         this.selectedAnswer = null;
         //this.selectedAnotherOption = false;
     }

@@ -67,9 +67,11 @@ public class Main {
             surveyCopiesMod.add(surveyLinkedList.get(i).fillQuestionArrays(surveyCopiesBas.get(i)));
         }
 
+        /*surveyCopiesBas.get(i).getId()*/
+
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
-                responseLinkedList.add(new Response(generateInt(1000000), surveyCopiesBas.get(i).getId(), checkID, generateInt(surveyCopiesMod.get(i).getQuestionsNumber())));
+                responseLinkedList.add(new Response(generateBasString(43), surveyCopiesBas.get(i).getId(), checkID, generateInt(surveyCopiesMod.get(i).getQuestionsNumber())));
             }
         }
 

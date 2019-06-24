@@ -19,6 +19,7 @@ public class Survey{
     Survey(){
         this.id = null;
         this.meta = null;
+        this.questions = null;
     }
 
     public String getId() {
@@ -80,7 +81,7 @@ public class Survey{
                 SurveyTypeText bufferT = new SurveyTypeText(generateBasString(generateInt(40)),
                         generateBasString(generateInt(30)),
                         generateBasString(generateInt(100)),
-                        generateInt(10000000),
+                        generateBasString(43),
                         generateBoolean());
                 surveyCopy.getQuestionsT().add(bufferT);
                 this.questions.add(bufferT);
@@ -90,7 +91,7 @@ public class Survey{
                 SurveyTypeTextArea bufferTA = new SurveyTypeTextArea(generateBasString(generateInt(40)),
                         generateBasString(generateInt(30)),
                         generateBasString(generateInt(100)),
-                        generateInt(10000000),
+                        generateBasString(43),
                         generateBoolean());
                 surveyCopy.getQuestionsTA().add(bufferTA);
                 this.questions.add(bufferTA);
@@ -100,7 +101,7 @@ public class Survey{
                 SurveyTypeMultipleChoice bufferMC = new SurveyTypeMultipleChoice(generateBasString(generateInt(40)),
                         generateBasString(generateInt(30)),
                         generateBasString(generateInt(100)),
-                        generateInt(10000000),
+                        generateBasString(43),
                         generateBoolean(),
                         generateInt(10));
                 surveyCopy.getQuestionsMC().add(bufferMC);
@@ -111,7 +112,7 @@ public class Survey{
                 SurveyTypeCheckbox bufferCB = new SurveyTypeCheckbox(generateBasString(generateInt(40)),
                         generateBasString(generateInt(30)),
                         generateBasString(generateInt(100)),
-                        generateInt(10000000),
+                        generateBasString(43),
                         generateBoolean(),
                         generateInt(10));
                 surveyCopy.getQuestionsCB().add(bufferCB);
@@ -122,7 +123,7 @@ public class Survey{
                 SurveyTypeDropdown bufferDD = new SurveyTypeDropdown(generateBasString(generateInt(40)),
                         generateBasString(generateInt(30)),
                         generateBasString(generateInt(100)),
-                        generateInt(10000000),
+                        generateBasString(43),
                         generateBoolean(),
                         generateInt(10));
                 surveyCopy.getQuestionsDD().add(bufferDD);

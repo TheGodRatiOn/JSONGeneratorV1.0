@@ -2,7 +2,7 @@ package JsonSurveyReplieClasses.Replie.Survey;
 
 
 public class SurveyTypeTextArea extends questions {
-    SurveyTypeTextArea(String sHelpText, String sPlaceHolder, String sTitle, int sID, boolean sIsRequired){
+    SurveyTypeTextArea(String sHelpText, String sPlaceHolder, String sTitle, String sID, boolean sIsRequired) {
         this.type = "TEXTAREA";
         this.helpText = sHelpText;
         this.placeholder = sPlaceHolder;
@@ -11,12 +11,12 @@ public class SurveyTypeTextArea extends questions {
         this.isRequired = sIsRequired;
     }
 
-    SurveyTypeTextArea(){
+    SurveyTypeTextArea() {
         this.type = null;
         this.helpText = null;
         this.placeholder = null;
         this.title = null;
-        this.id = -1;
+        this.id = null;
         this.isRequired = false;
     }
 }

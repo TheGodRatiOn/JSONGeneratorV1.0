@@ -3,7 +3,7 @@ package JsonSurveyReplieClasses.Replie.Survey;
 import java.util.ArrayList;
 
 public class SurveyTypeCheckbox extends questions {
-   // private boolean hasOtherOption;
+   //private boolean hasOtherOption;
     private ArrayList<String> options;
 
     private void fillOptions(int a){
@@ -13,7 +13,7 @@ public class SurveyTypeCheckbox extends questions {
         }
     }
 
-    SurveyTypeCheckbox(String sHelpText, String sPlaceHolder, String sTitle, int sID, boolean sIsRequired, int sOptLength){
+    SurveyTypeCheckbox(String sHelpText, String sPlaceHolder, String sTitle, String sID, boolean sIsRequired, int sOptLength){
         this.type = "CHECKBOX";
         this.helpText = sHelpText;
         this.placeholder = sPlaceHolder;
@@ -26,7 +26,7 @@ public class SurveyTypeCheckbox extends questions {
             this.hasOtherOption = false;
         }*/
         //this.optionsLength = sOptLength;
-        this.options = new ArrayList<String>();
+        this.options = new ArrayList<>();
         this.fillOptions(sOptLength);
     }
 
@@ -35,7 +35,7 @@ public class SurveyTypeCheckbox extends questions {
         this.helpText = null;
         this.placeholder = null;
         this.title = null;
-        this.id = -1;
+        this.id = null;
         this.isRequired = false;
         //this.hasOtherOption = false;
         //this.optionsLength = -1;

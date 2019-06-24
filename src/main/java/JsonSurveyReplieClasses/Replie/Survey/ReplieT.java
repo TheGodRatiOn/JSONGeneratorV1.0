@@ -3,7 +3,7 @@ package JsonSurveyReplieClasses.Replie.Survey;
 public class ReplieT extends replies {
     String Text;
 
-    ReplieT(int rID, String rText){
+    ReplieT(String rID, String rText){
         this.type = "TEXT";
         this.questionID = rID;
         this.Text = rText;
@@ -11,7 +11,7 @@ public class ReplieT extends replies {
 
     ReplieT(){
         this.type = null;
-        this.questionID = -1;
+        this.questionID = null;
         this.Text = null;
     }
 }

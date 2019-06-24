@@ -5,6 +5,6 @@ abstract class questions {
     String helpText;
     String placeholder;
     String title;
-    int id;
+    String id;
     boolean isRequired;
 }
